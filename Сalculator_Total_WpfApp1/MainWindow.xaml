@@ -5,10 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Сalculator_Total_WpfApp1"
         mc:Ignorable="d"
-        Title="Calculator" Height="400" Width="400">
+        Title="Калькулятор" Height="400" Width="400">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0B4B70" Offset="0.027"/>
+                <GradientStop Color="#FF46ACE6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
         <TabControl HorizontalAlignment="Center" Height="350" VerticalAlignment="Top" Width="350">
-            <TabItem Header="Обычный">
+            <TabItem Header="Обычный калькулятор">
                 <Grid x:Name="MainRoot" Background="Bisque">
                     <Grid.RowDefinitions>
                         <RowDefinition />
@@ -23,7 +29,7 @@
                         <ColumnDefinition/>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Grid.Row="0" Grid.Column="0" Text="" Grid.ColumnSpan="4" x:Name="textLabel" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="textLabel" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Center"/>
                     <Button Grid.Column="0" Grid.Row="1" Height="Auto">1</Button>
                     <Button Grid.Column="1" Grid.Row="1" Height="Auto">2</Button>
                     <Button Grid.Column="2" Grid.Row="1" Height="Auto">3</Button>

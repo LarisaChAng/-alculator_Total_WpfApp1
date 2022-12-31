@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,9 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Data;
 
-namespace Сalculator_Total_WpfApp1
+namespace Сalculator_Total_WpfApp2
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml
@@ -24,8 +24,9 @@ namespace Сalculator_Total_WpfApp1
         public MainWindow()
         {
             InitializeComponent();
-            //Через цикл обратимся к элементам сетки "MainRoot" и добавим обработчик события
+
             foreach (UIElement el in MainRoot.Children)
+
             {
                 if (el is Button)
                 {
